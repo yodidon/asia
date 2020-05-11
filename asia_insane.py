@@ -434,7 +434,7 @@ def showHosters():
     
     oRequestHandler.request()
     sHtmlContent = oRequestHandler.request()
-    sPattern = 'src="([^"]+)"'
+    sPattern = 'https="([^"]+)"'
     sHosterUrl = oRequestHandler.getRealUrl()
     oParser = cParser()
     aResult = oParser.parse(sHtmlContent, sPattern)
